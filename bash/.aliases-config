@@ -1,0 +1,39 @@
+#!/bin/bash
+## Bash Aliases
+
+## `ls` Aliases
+alias ls='ls -gGh --color=auto --group-directories-first'
+alias sl='ls -gGh --color=auto --group-directories-first'
+alias l='ls -gGh --color=auto --group-directories-first'
+alias ll='ls -gGh --color=auto --group-directories-first'
+alias clea='clear'
+
+## `grep` Alies
+alias grep='grep --color=auto'
+
+## Neovim Alias 
+alias vim='nvim'
+
+## Replace neofetch with fastfetch
+alias neofetch='fastfetch'
+
+## Aliases for config files.
+alias config-nvim='cd ~/.config/nvim/lua/ && vim'
+alias config-ssh='cd ~/.ssh/ && vim ./config'
+alias config-fastfetch='cd ~/.config/fastfetch/ && vim'
+alias config-alias='cd ~/.dotfiles/bash/ && vim ./aliases-config'
+alias config-bashrc='cd && vim ./.bashrc'
+alias config-hyper='cd ~/.dotfiles/hyprland/; vim;'
+
+
+# Git Aliases
+alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'
+alias pushgit='git add .; git commit -m "auto-commit"; git push;'
+# alias openrepo="firefox `git remote get-url origin | sed 's/git@github.com:/github.com\//g'`"
+
+# alias notes='cd ~/Downloads/school-notes/notes/spring-2024/ && nvim'
+
+alias pandoc='pandoc -V geometry:margin=1in '
+
+alias todo='vim ~/Downloads/todo.md'
+

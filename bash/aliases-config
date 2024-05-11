@@ -1,0 +1,38 @@
+#!/bin/bash
+## Bash Aliases
+
+# ls misspells.
+alias ls='ls -gGh --color=auto --group-directories-first'
+alias sl='ls'
+alias l='ls'
+alias ll='ls'
+alias clea='clear'
+
+# `grep` Alies
+alias grep='grep --color=auto'
+
+# Neovim Alias 
+alias vim='nvim'
+
+# Replace neofetch with fastfetch
+alias neofetch='fastfetch'
+
+## Aliases for config files.
+alias conf-nvim='cd ~/.config/nvim/lua/ && vim'
+alias conf-ssh='cd ~/.ssh/ && vim ./config'
+alias conf-fastfetch='cd ~/.config/fastfetch/ && vim'
+alias conf-alias='cd ~/.dotfiles/bash/ && vim ./.aliases-config'
+alias conf-bashrc='cd && vim ./.bashrc'
+alias conf-hyper='cd ~/.dotfiles/hyprland/; vim;'
+
+
+# Git Aliases
+alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'
+alias pushgit='git add .; git commit -m "auto-commit"; git push;'
+
+# Pandoc
+alias pandoc='pandoc -V geometry:margin=1in '
+
+# To do list.
+alias todo='vim ~/Downloads/todo.md'
+

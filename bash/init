@@ -8,7 +8,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 
 # Name of files that are to be imported into the existing bash session
-files=(".aliases-config")
+files=("aliases-config")
 
 for file in ${files[@]}; do
 [ -f $SCRIPT_DIR/$file ] && . $SCRIPT_DIR/$file
@@ -16,5 +16,12 @@ done
 
 
 
+# Ignore duplicate commands.
+export HISTCONTROL=ignoreboth:erasedups
 
+PS1='[\u@\h \W]\$ '
 
+# adding very important output.
+# cowsay  "$(echo "only $(($(date -d 'May 10, 2024' +%j | sed 's/^0*//g') - $(date +%j | sed 's/^0*//g'))) days until graduation.")
+#
+# yah gettin' jiggy wid it?"

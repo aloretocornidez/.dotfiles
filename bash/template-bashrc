@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## bashrc 
+
+## If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+## Import Bash config files.
+[ -f "$HOME/.dotfiles/bash/init" ] && source $HOME/.dotfiles/bash/init
+
+## GPG Terminal for signing commits.
+export GPG_TTY=$(tty)

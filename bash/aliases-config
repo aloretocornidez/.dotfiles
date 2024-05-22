@@ -25,6 +25,7 @@ alias conf-alias='cd ~/.dotfiles/bash/ && vim ./aliases-config'
 alias conf-bashrc='cd && vim ./.bashrc'
 alias conf-hyper='cd ~/.dotfiles/hyprland/; vim;'
 
+alias guitarix='PIPEWIRE_LATENCY="128/48000" guitarix' 
 
 # Git Aliases
 alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'

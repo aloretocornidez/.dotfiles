@@ -21,9 +21,10 @@ alias neofetch='fastfetch'
 alias conf-nvim='cd ~/.config/nvim/lua/ && vim'
 alias conf-ssh='cd ~/.ssh/ && vim ./config'
 alias conf-fastfetch='cd ~/.config/fastfetch/ && vim'
-alias conf-alias='cd ~/.dotfiles/bash/ && vim ./.aliases-config'
+alias conf-alias='cd ~/.dotfiles/bash/ && vim ./aliases-config'
 alias conf-bashrc='cd && vim ./.bashrc'
 alias conf-hyper='cd ~/.dotfiles/hyprland/; vim;'
+alias conf-waybar='cd ~/.dotfiles/waybar/; vim;'
 
 
 # Git Aliases

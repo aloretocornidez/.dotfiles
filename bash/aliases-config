@@ -32,6 +32,11 @@ alias guitarix='PIPEWIRE_LATENCY="128/48000" guitarix'
 alias pullgit='for i in */.git/; do (cd $i/..; pwd; git pull --recurse); done;'
 alias pushgit='git add .; git commit -m "auto-commit"; git push;'
 
+alias yeet='git push'
+alias rizz='git commit -m'
+alias slay='git add'
+alias vibes='git status'
+
 # Pandoc
 alias pandoc='pandoc -V geometry:margin=1in '
 
